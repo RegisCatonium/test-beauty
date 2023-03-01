@@ -1,0 +1,88 @@
+
+@media only screen  and (max-width : 600px)
+	html
+		font-size: calc(100vw/600*10)
+
+	.logo
+		font-size: 3.2rem
+		&::before
+			width: 6rem
+			height: 6rem
+	.header__bottom
+		.nav
+			flex-wrap: wrap
+			padding: 0 3rem
+			gap: 1.5rem
+			&__link
+				font-size: 2rem
+
+	.banner
+		align-items: flex-end
+		padding: 10rem 5rem
+		height: 88rem
+		&::after
+			width: 24rem
+			height: 38.8rem
+			top: 10rem
+			right: 30%
+		&::before
+			width: 45rem
+			height: 45rem
+			top: 7rem
+			right: 13%
+		&__text
+			max-width: 100%
+			font-size: 1.8rem
+		& .btn
+			font-size: 2.2rem
+	.catalog__title
+		margin-bottom: 6rem
+
+	.cards
+		justify-content: space-around
+		flex-wrap: wrap
+		gap: 2rem
+
+	.subscribe
+		flex-direction: column
+		height: 55rem
+		padding: 5rem
+		gap: 3rem
+		&__item:first-child::before
+			width: 12rem
+			height: 10rem
+			top: auto
+			bottom: 1rem
+		&__title
+			font-size: 2rem
+		&__text
+			max-width: 27rem
+			font-size: 1.6rem
+
+	.footer
+		&__item
+			width: 100%
+			height: auto
+			padding: 3rem
+			flex-direction: column-reverse
+			gap: 3rem
+			&_bottom
+				height: auto
+				gap: 1.5rem
+		&__info
+			flex-wrap: wrap
+			justify-content: center
+			// flex-direction: column-reverse
+			& .info__span
+				font-size: 1.8rem
+		& .btn
+			font-size: 2rem
+			padding: 2rem 3rem
+			align-self: center
+		&__text
+			font-size: 1.4rem
+			color: #828282
+			text-align: center
+	.social__item
+		width: 6rem
+		height: 6rem
